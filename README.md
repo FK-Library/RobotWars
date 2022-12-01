@@ -35,12 +35,12 @@ In order to confirm your program is working correctly, we have provided some tes
 your use. Implement these details however you consider most appropriate.
 
 ## Test input:
-5 5 \n
+5 5 
 
-1 2 N \n
+1 2 N 
 
-LMLMLMLMM \n
+LMLMLMLMM 
 
-3 3 E \n
+3 3 E 
 
-MMRMMRMRRM \n
+MMRMMRMRRM 

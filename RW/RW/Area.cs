@@ -18,7 +18,6 @@ namespace RW
         public int EndX;
 
         public int EndY;
-
-       
+              
     }
 }

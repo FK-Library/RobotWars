@@ -1,5 +1,5 @@
 # RobotWars
-Requirements
+## Requirements
 A fleet of hand-built robots are due to engage in battle for the annual “Robot Wars” competition. Each
 robot will be placed within a rectangular battle arena and will navigate their way around the arena
 using a built-in computer system.
@@ -15,7 +15,7 @@ make the robot spin 90 degrees to the left or right respectively without moving 
 while ‘M’ means move forward one grid point and maintain the same heading. Assume that the square
 directly North from (x, y) is (x, y+1).
 
-Input
+## Input
 The first line of input is the upper-right coordinates of the arena, the lower-left coordinates are
 assumed to be (0, 0).
 
@@ -26,13 +26,15 @@ the robot how to move within the arena.
 The position is made up of two integers and a letter separated by spaces, corresponding to the x and y
 coordinates and the robot’s orientation. Each robot will finish moving sequentially, which means that
 the second robot won’t start to move until the first one has finished moving.
-Output
+
+## Output
 The output for each robot should be its final coordinates and heading.
 
-Acceptance criteria
+## Acceptance criteria
 In order to confirm your program is working correctly, we have provided some test input and output for
 your use. Implement these details however you consider most appropriate.
-Test input:
+
+## Test input:
 5 5
 1 2 N
 LMLMLMLMM

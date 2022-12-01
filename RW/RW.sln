@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33110.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RW", "RW\RW.csproj", "{53A250B7-A39B-4315-9937-6ED547A97952}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RWTest", "RWTest\RWTest.csproj", "{8FD9CAD7-7148-4B2B-AC50-0ACF5F928F51}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{53A250B7-A39B-4315-9937-6ED547A97952}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53A250B7-A39B-4315-9937-6ED547A97952}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53A250B7-A39B-4315-9937-6ED547A97952}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53A250B7-A39B-4315-9937-6ED547A97952}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FD9CAD7-7148-4B2B-AC50-0ACF5F928F51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FD9CAD7-7148-4B2B-AC50-0ACF5F928F51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FD9CAD7-7148-4B2B-AC50-0ACF5F928F51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FD9CAD7-7148-4B2B-AC50-0ACF5F928F51}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9B3F6864-7E1A-4E81-A7E5-CA583E05674B}
+	EndGlobalSection
+EndGlobal

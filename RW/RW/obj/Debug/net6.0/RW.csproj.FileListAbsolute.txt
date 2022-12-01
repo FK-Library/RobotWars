@@ -1,0 +1,15 @@
+C:\Users\Price's\source\repos\RobotWars\RobotWars\RW\RW\bin\Debug\net6.0\RW.exe
+C:\Users\Price's\source\repos\RobotWars\RobotWars\RW\RW\bin\Debug\net6.0\RW.deps.json
+C:\Users\Price's\source\repos\RobotWars\RobotWars\RW\RW\bin\Debug\net6.0\RW.runtimeconfig.json
+C:\Users\Price's\source\repos\RobotWars\RobotWars\RW\RW\bin\Debug\net6.0\RW.dll
+C:\Users\Price's\source\repos\RobotWars\RobotWars\RW\RW\bin\Debug\net6.0\RW.pdb
+C:\Users\Price's\source\repos\RobotWars\RobotWars\RW\RW\obj\Debug\net6.0\RW.csproj.AssemblyReference.cache
+C:\Users\Price's\source\repos\RobotWars\RobotWars\RW\RW\obj\Debug\net6.0\RW.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Price's\source\repos\RobotWars\RobotWars\RW\RW\obj\Debug\net6.0\RW.AssemblyInfoInputs.cache
+C:\Users\Price's\source\repos\RobotWars\RobotWars\RW\RW\obj\Debug\net6.0\RW.AssemblyInfo.cs
+C:\Users\Price's\source\repos\RobotWars\RobotWars\RW\RW\obj\Debug\net6.0\RW.csproj.CoreCompileInputs.cache
+C:\Users\Price's\source\repos\RobotWars\RobotWars\RW\RW\obj\Debug\net6.0\RW.dll
+C:\Users\Price's\source\repos\RobotWars\RobotWars\RW\RW\obj\Debug\net6.0\refint\RW.dll
+C:\Users\Price's\source\repos\RobotWars\RobotWars\RW\RW\obj\Debug\net6.0\RW.pdb
+C:\Users\Price's\source\repos\RobotWars\RobotWars\RW\RW\obj\Debug\net6.0\RW.genruntimeconfig.cache
+C:\Users\Price's\source\repos\RobotWars\RobotWars\RW\RW\obj\Debug\net6.0\ref\RW.dll

@@ -80,7 +80,8 @@ namespace RW
 
         public void ValidateCoordination(int fromX, int fromY)
         {
-            if (fromX > EndGridX || fromX < 0 || fromY > EndGridY|| fromY<0) throw new IndexOutOfRangeException();
+            if (fromX > EndGridX || fromX < 0 || fromY > EndGridY || fromY < 0) 
+                throw new IndexOutOfRangeException();
            
         }
  

@@ -13,8 +13,6 @@ namespace RW
         public string RobotLocation { get; set; }
         public string RobotMovement { get; set; }
 
-        public int[]  Coordination = new int[] {0,0};
-
         public Tuple<int, int> Cord = new Tuple<int, int>(0,0);
 
         public static string Direction(string from,string headTo)
@@ -33,7 +31,7 @@ namespace RW
         public static Tuple<int, int> CalculateDirection(int x,int y ,string direction)
         {
 
-            switch (direction)
+            switch (direction.ToUpper())
             {
                 case "N":
                     return new Tuple<int, int>(x, y + 1);
@@ -46,11 +44,8 @@ namespace RW
                 
                 case "E":
                     return new Tuple<int, int>(x+1, y );
-
-                defult:
-                    break;
-
             }
+
             return new Tuple<int, int>(x, y);
         }
 
@@ -60,9 +55,9 @@ namespace RW
             var locationArray = location.Split(' ').ToArray();
             var fromX = int.Parse(locationArray[0]);
             var fromY = int.Parse(locationArray[1]);
-            var fromDirection = locationArray[2].ToString();
-            char[] instructionArray = new char[movement.Length];
+            var fromDirection = locationArray[2].ToString().ToUpper();
 
+            char[] instructionArray = new char[movement.Length];
             instructionArray = movement.ToCharArray();
 
             for (int i = 0 ; i < movement.Length; i++)
@@ -77,6 +72,7 @@ namespace RW
                     var newCoordination= CalculateDirection(fromX,fromY,fromDirection);
                     fromX = newCoordination.Item1;
                     fromY = newCoordination.Item2;
+                    ValidateCoordination(fromX, fromY);
                 }
 
             }
@@ -85,11 +81,18 @@ namespace RW
 
         }
 
+        public void ValidateCoordination(int fromX, int fromY)
+        {
+            if (fromX > EndGridX || fromX < 0 || fromY > EndGridY|| fromY<0) throw new IndexOutOfRangeException();
+           
+        }
+
         //TODO: Add GridCheck
         //TODO:Call 1st and second player
         //TODO:LowercaseCheck
         //TODO:Invalid input Check and error handeling
-        
+
+
 
 
     }

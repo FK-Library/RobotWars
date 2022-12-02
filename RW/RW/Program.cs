@@ -1,5 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-using RW;
+﻿using RW;
 
 Console.WriteLine("Welcome To RobotWars");
 Console.WriteLine("If you want to exit, write EXIT");

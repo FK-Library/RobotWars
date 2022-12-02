@@ -9,7 +9,6 @@ var readArea = Console.ReadLine();
 var areEnd = readArea.Split(' ').ToArray();
 Console.WriteLine(areEnd[0], areEnd[1]);
 
-var area = new Area(int.Parse(areEnd[0]), int.Parse(areEnd[1]));
 
 
 
@@ -34,3 +33,4 @@ Console.WriteLine("output of robot 1");
 Console.WriteLine("output of robot 2");
 
 var xx = Console.ReadKey();
+

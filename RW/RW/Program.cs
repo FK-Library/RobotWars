@@ -2,35 +2,39 @@
 using RW;
 
 Console.WriteLine("Welcome To RobotWars");
+Console.WriteLine("The game will");
 
-Console.WriteLine("Please enter area end seperated by space (e.g: 5 5) ");
+Console.WriteLine("Please enter arena grid separating with space (e.g: 5 5) ");
 
-var readArea = Console.ReadLine();
-var areEnd = readArea.Split(' ').ToArray();
-Console.WriteLine(areEnd[0], areEnd[1]);
-
-
-
-
-/*
-//Should call Robot 1 process and then robot 2- process untill win or fail( they clash or reach boundaries or end)
-Console.WriteLine("Please enter 1st robot position");
-var p1 = Console.ReadLine();
-//Console.WriteLine(p1);
-Console.WriteLine("Please enter 1st robot instructions");
-var i1 = Console.ReadLine();
-//Console.WriteLine(i1);
+var grid = Console.ReadLine();
+var play = new Play();
+play.SetGrid(grid);
 
 Console.WriteLine("Please enter 1st robot position");
-var p2 = Console.ReadLine();
-//Console.WriteLine(p2);
+var position = Console.ReadLine();
+
 Console.WriteLine("Please enter 1st robot instructions");
-var i2 = Console.ReadLine();
-//Console.WriteLine(i2);
-*/
+var direction = Console.ReadLine();
 
-Console.WriteLine("output of robot 1");
-Console.WriteLine("output of robot 2");
+Console.WriteLine("Robot1 is in this location:");
+Console.WriteLine(play.CalculateLocation(location: position, movement: direction));
 
-var xx = Console.ReadKey();
+
+Console.WriteLine("Please enter 2nd robot position");
+ position = Console.ReadLine();
+
+Console.WriteLine("Please enter 2nd robot instructions");
+ direction = Console.ReadLine();
+
+Console.WriteLine("Robot2 is in this location:");
+Console.WriteLine(play.CalculateLocation(location: position, movement: direction));
+
+
+
+var exit = Console.ReadKey();
+
+//TODO: Add GridCheck
+//TODO:Call 1st and second player
+//TODO:LowercaseCheck
+//TODO:Invalid input Check and error handeling
 

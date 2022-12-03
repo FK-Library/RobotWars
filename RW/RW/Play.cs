@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -8,10 +9,16 @@ namespace RW
 {
     public class Play
     {
-        public int EndGridX { get; set; }
-        public int EndGridY { get; set; }
 
-        public Tuple<int, int> Cord = new Tuple<int, int>(0,0);
+        public IRobotDTO Grid { get; set; }
+
+        //public Tuple<int, int> Cord = new Tuple<int, int>(0,0);
+
+        public Play(IRobotDTO grid)//, Tuple<int, int> cord)
+        {
+            Grid = grid;
+            //Cord = cord;
+        }
 
         public  string CalculateLocation(string location, string movement)
         {
@@ -35,7 +42,7 @@ namespace RW
                     var newCoordination= CalculateDirection(fromX,fromY,fromDirection);
                     fromX = newCoordination.Item1;
                     fromY = newCoordination.Item2;
-                    ValidateCoordination(fromX, fromY);
+                    this.Grid.CheckGrid(fromX, fromY);
                 }
 
             }
@@ -78,18 +85,6 @@ namespace RW
             return new Tuple<int, int>(x, y);
         }
 
-        public void ValidateCoordination(int fromX, int fromY)
-        {
-            if (fromX > EndGridX || fromX < 0 || fromY > EndGridY || fromY < 0) 
-                throw new IndexOutOfRangeException();
-           
-        }
- 
-        public  void SetGrid(string grid)
-        {
-            var gridArray = grid.Split(' ').ToArray();
-            this.EndGridX= int.Parse(gridArray[0]);
-            this.EndGridY = int.Parse(gridArray[1]);
-        }
+
     }
 }

@@ -13,9 +13,11 @@ namespace RWTest
         [DataRow("5 5", "3 3 E", "MMRMMRMRRM", "5 1 E")]
         public void Play_GivenGridAndPositionAndDrirection_ReturnsRobotFinalPosition (string grid, string position,string direction,string expected)
         {
-            var play = new Play();
+            var robotDto = new RobotDTO();
+            var gridInput = Console.ReadLine();
+            robotDto.SetGrid(gridInput);
+            var play = new Play(robotDto);
 
-            play.SetGrid(grid);
             var result = play.CalculateLocation(location:position, movement:direction);
 
             Assert.AreEqual(expected, result);

@@ -14,8 +14,7 @@ namespace RWTest
         public void Play_GivenGridAndPositionAndDrirection_ReturnsRobotFinalPosition (string grid, string position,string direction,string expected)
         {
             var robotDto = new RobotDTO();
-            var gridInput = Console.ReadLine();
-            robotDto.SetGrid(gridInput);
+            robotDto.SetGrid(grid);
             var play = new Play(robotDto);
 
             var result = play.CalculateLocation(location:position, movement:direction);

@@ -10,14 +10,13 @@ namespace RW
     public class Play
     {
 
-        public IRobotDTO Grid { get; set; }
+        public IGrid Grid { get; set; }
 
         //public Tuple<int, int> Cord = new Tuple<int, int>(0,0);
 
-        public Play(IRobotDTO grid)//, Tuple<int, int> cord)
+        public Play(IGrid grid)
         {
             Grid = grid;
-            //Cord = cord;
         }
 
         public  string CalculateLocation(string location, string movement)

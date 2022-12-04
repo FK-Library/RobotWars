@@ -6,16 +6,10 @@ using System.Threading.Tasks;
 
 namespace RW
 {
-    public class RobotDTO : IRobotDTO
+    public class Grid : IGrid
     {
         public int EndGridX { get; set; }
         public int EndGridY { get; set; }
-
-        public string Robot1Position { get; set; }
-        public string Robot1Direction{ get; set; }
-        public string Robot2Position { get; set; }
-        public string Robot2Direction { get; set; }
-
 
         public void SetGrid(string grid)
         {

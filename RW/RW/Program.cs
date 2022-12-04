@@ -19,14 +19,11 @@ var movementCalc = new MovementCalculator(details.MaxGridX, details.MaxGridY, li
 var RobotMoves = new List<Robot>();
 foreach (var detail in details.RobotInstructions)
 {
-    //var rob = detail.Robot;
     Console.WriteLine($"Robot Start: {detail.Robot.X} {detail.Robot.Y} {detail.Robot.Heading}");
     foreach (var movement in detail.Instructions)
     {
         detail.Robot = movementCalc.MoveRobot(detail.Robot, movement);
         RobotMoves.Add(detail.Robot);
-        //Console.WriteLine($"Robot Finish: {rob.X} {rob.Y} {rob.Heading}");
-
     }
 
     Console.WriteLine($"Robot Finish: {detail.Robot.X} {detail.Robot.Y} {detail.Robot.Heading}");

@@ -12,6 +12,5 @@ namespace RW
         S,
         W,
         E
-
     }
 }

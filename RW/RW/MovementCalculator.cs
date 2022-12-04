@@ -29,7 +29,6 @@ namespace RW
                     return item.Item3;
                 }
 
-
             }
 
             // If invalid movement return current heading

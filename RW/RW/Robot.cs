@@ -12,16 +12,10 @@ namespace RW
         public int Y { get; set; }
         public Heading Heading { get; set; }
 
-        public Robot()
-        {
-
-        }
         public Robot(int x, int y, Heading heading) {
             this.X = x;
             this.Y = y;
             this.Heading= heading;
         }
-
-
     }
 }

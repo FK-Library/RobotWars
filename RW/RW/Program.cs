@@ -29,6 +29,3 @@ foreach (var detail in details.RobotInstructions)
 }
 
 
-//TODO: handleNullString
-//TODO:Invalid input Check and error handeling
-
